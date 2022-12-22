@@ -1,13 +1,10 @@
 import './App.css';
 import React, { useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { useLoader } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Model from './components/Model';
 import {
   Environment,
   OrbitControls,
-  PerspectiveCamera,
   ContactShadows,
   Stage,
 } from '@react-three/drei';
