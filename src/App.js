@@ -15,9 +15,14 @@ function App() {
   const mouse = useRef([0, 0]);
   return (
     <div className="App">
-      <Canvas camera={{ position: [30, 50, -350], fov: 90 }}>
+      <Canvas camera={{ position: [0, 50, -350], fov: 55 }}>
         <color attach="background" args={['#0e1111']} />
-        <Stage preset="rembrandt" intensity={4} environment="city">
+        <Stage
+          preset="rembrandt"
+          intensity={4}
+          environment="city"
+          adjustCamera={2}
+        >
           <pointLight position={[10, 10, 10]} intensity={1.5} />
           <Suspense fallback={null}>
             <group rotation={[0, Math.PI, 0]} position={[0, 0, 10]}>
