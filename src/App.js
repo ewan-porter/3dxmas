@@ -25,7 +25,7 @@ function App() {
         >
           <pointLight position={[10, 10, 10]} intensity={1.5} />
           <Suspense fallback={null}>
-            <group rotation={[0, Math.PI, 0]} position={[0, -15, 10]}>
+            <group rotation={[0, Math.PI, 0]} position={[0, -10, 10]}>
               <Model scale={[0.1, 0.1, 0.1]} />
             </group>
 
