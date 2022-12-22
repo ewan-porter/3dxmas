@@ -2,7 +2,7 @@
   "name": "rtf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ewanporter.github.io",
+  "homepage": "https://ewan-porter.github.io/3dxmas/",
   "dependencies": {
     "@react-three/drei": "^9.47.1",
     "@react-three/fiber": "^8.9.1",
