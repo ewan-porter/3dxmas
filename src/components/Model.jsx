@@ -35,12 +35,24 @@ const Model = (props) => {
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group rotation={[-Math.PI / 2, 0, 0]}>
+          <group
+            position={[0, 110, 0]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={100}
+          >
             <mesh
-              geometry={
-                nodes.retro_computer_setup_retro_computer_setup_Mat_0.geometry
-              }
-              material={materials.retro_computer_setup_Mat}
+              geometry={nodes.glass_glass_0.geometry}
+              material={materials.glass}
+            />
+          </group>
+          <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+            <mesh
+              geometry={nodes.christmass_ball_inside_0.geometry}
+              material={materials.inside}
+            />
+            <mesh
+              geometry={nodes.christmass_ball_ouline_0.geometry}
+              material={materials.ouline}
             />
           </group>
         </group>
